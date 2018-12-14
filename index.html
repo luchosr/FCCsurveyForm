@@ -18,12 +18,13 @@
           <div></div>
           <div></div>
           <div></div>
-          <label for="name">*Name:</label> <input type="text" id="name" /> <br />
-          <label for="email">*E-mail:</label>
-          <input type="text" id="age" placeholder="enter your e-mail" /><br />
-          <label for="age">*Age:</label>
-          <input type="number" min="1" max="120" id="age" placeholder="enter your age" /><br />
+          <label for="name" id="name-label">*Name:</label> <input type="text" id="name" placeholder="enter your best name" required/> <br />
+          <label for="email" id="email-label">*E-mail:</label>
+          <input type="email" id="email" placeholder="enter your e-mail" required /><br />
+          <label for="age" id="number-label">*Age:</label>
+          <input type="number" min="1" max="120" id="number" placeholder="enter your age"  required/><br />
         </fieldset>
+        
       </form>
     </main>
   </body>
