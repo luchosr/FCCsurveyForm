@@ -1,30 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+      /* 
+    font-family: 'Roboto', sans-serif;
+
+font-family: 'Open Sans', sans-serif; */
+      fieldset {
+        background-color: rgb(133, 155, 193);
+      }
+      body{
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+      }
+      .labels {
+        display: inline-block;
+        text-align: right;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crypto Survey Form</title>
   </head>
+
   <body>
     <header>
       <h1 id="title">Crypto Knowledge</h1>
       <p id="description">A survey form to know how Crypto are you.</p>
     </header>
     <main>
-      <form action="" id="survey-form">
-        <fieldset>
-          <legend>Personal Data</legend>
-          <div></div>
-          <div></div>
-          <div></div>
-          <label for="name" id="name-label">*Name:</label> <input type="text" id="name" placeholder="enter your best name" required/> <br />
-          <label for="email" id="email-label">*E-mail:</label>
-          <input type="email" id="email" placeholder="enter your e-mail" required /><br />
-          <label for="age" id="number-label">*Age:</label>
-          <input type="number" min="1" max="120" id="number" placeholder="enter your age"  required/><br />
-        </fieldset>
-        
+      <form
+        action=""
+        id="survey-form"
+        action="https://crossorigin.me/https://freecodecamp.com"
+      >
+        <legend>Personal Data</legend>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="name" id="name-label">*Name:</label>
+          </div>
+          <div class="righTab">
+            <input
+              type="text"
+              id="name"
+              placeholder="enter your best name"
+              required
+            />
+            <br />
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="email" id="email-label">*E-mail:</label>
+          </div>
+          <div class="righTab">
+            <input
+              type="email"
+              id="email"
+              placeholder="enter your best e-mail"
+              required
+            /><br />
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="age" id="number-label">*Age:</label>
+          </div>
+          <div class="righTab">
+            <input
+              type="number"
+              min="1"
+              max="120"
+              id="number"
+              placeholder="enter your beautiful age"
+              required
+            /><br />
+          </div>
+        </div>
       </form>
     </main>
   </body>
