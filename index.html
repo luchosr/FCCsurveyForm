@@ -7,17 +7,27 @@
     font-family: 'Roboto', sans-serif;
 
 font-family: 'Open Sans', sans-serif; */
-      fieldset {
-        background-color: rgb(133, 155, 193);
-      }
+     
       body{
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+        min-width: 320px;
       }
+      header{
+        font-size: 2em;
+        font-weight: bold;
+        margin:20px;
+      }
+
       .labels {
         display: inline-block;
         text-align: right;
+        /* width: 40%; */
+        padding:5px;
+        vertical-align: top;
+        margin-top: 5px;
       }
+
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -79,7 +89,18 @@ font-family: 'Open Sans', sans-serif; */
             /><br />
           </div>
         </div>
+        <div class="rowTab">
+          <div class="label">Since how many years have you heard about bitcoin, Blockchain and related</div>
+          <div class="rightTab"> <select name="seniority" id="dropdown" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="newie">I am a newie</option>
+            <option value="junior">A year ago</option>
+            <option value="semisr">Two or three years almost</option>
+            <option value="sr">At least four years</option>
+          </select> </div>
+        </div>  
       </form>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
