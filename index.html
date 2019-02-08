@@ -7,27 +7,25 @@
     font-family: 'Roboto', sans-serif;
 
 font-family: 'Open Sans', sans-serif; */
-     
-      body{
-        font-family: 'Open Sans', sans-serif;
+
+      /* body {
+        font-family: "Open Sans", sans-serif;
         text-align: center;
         min-width: 320px;
       }
-      header{
+      header {
         font-size: 2em;
         font-weight: bold;
-        margin:20px;
+        margin: 20px;
       }
 
       .labels {
         display: inline-block;
         text-align: right;
-        /* width: 40%; */
-        padding:5px;
+        padding: 5px;
         vertical-align: top;
         margin-top: 5px;
-      }
-
+      } */
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,59 +44,54 @@ font-family: 'Open Sans', sans-serif; */
         id="survey-form"
         action="https://crossorigin.me/https://freecodecamp.com"
       >
-        <legend>Personal Data</legend>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="name" id="name-label">*Name:</label>
-          </div>
-          <div class="righTab">
-            <input
-              type="text"
-              id="name"
-              placeholder="enter your best name"
-              required
-            />
-            <br />
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="email" id="email-label">*E-mail:</label>
-          </div>
-          <div class="righTab">
-            <input
-              type="email"
-              id="email"
-              placeholder="enter your best e-mail"
-              required
-            /><br />
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="labels">
-            <label for="age" id="number-label">*Age:</label>
-          </div>
-          <div class="righTab">
-            <input
-              type="number"
-              min="1"
-              max="120"
-              id="number"
-              placeholder="enter your beautiful age"
-              required
-            /><br />
-          </div>
-        </div>
-        <div class="rowTab">
-          <div class="label">Since how many years have you heard about bitcoin, Blockchain and related</div>
-          <div class="rightTab"> <select name="seniority" id="dropdown" class="dropdown">
-            <option disabled value>Select an option</option>
-            <option value="newie">I am a newie</option>
-            <option value="junior">A year ago</option>
-            <option value="semisr">Two or three years almost</option>
-            <option value="sr">At least four years</option>
-          </select> </div>
+       <div class="rowContainer">
+        <div class="leftSide"><label for="name" id="name-label">*Name</label></div>
+        <div class="rightSide">
+          <input type="text" id="name" placeholder="Enter your best name"required>
         </div>  
+       </div>
+       <div class="rowContainer">
+        <div class="leftSide"><label for="email" id="email-label">*E-mail</label></div>
+        <div class="rightSide">
+          <input type="email" id="email" required placeholder="Enter your best e-mail">
+        </div>  
+       </div>
+       <div class="rowContainer">
+        <div class="leftSide">
+          <label for="age" id="number-label">*Age</label></div>
+        <div class="rightSide">
+          <input type="number" name="age" min="1" max="120" placeholder="Age">
+        </div>  
+       </div>
+       <div class="rowContainer">
+         <div class="leftSide">
+            <label for="question">Since how many years have you heard about bitcoin, Blockchain and
+                related?</label></div>
+                <div class="rightSide">
+                    <select name="seniority" id="dropdown" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="newie">I am a newie</option>
+                        <option value="junior">A year ago</option>
+                        <option value="semisr">Two or three years almost</option>
+                        <option value="sr">At least four years</option>
+                      </select>
+                  </div>  
+         </div>
+         <div class="rowContainer">
+           <div class="rightSide">
+              <label for="question">In a hipotetical situation, how many of your savings will you
+                  invest in crypto?</label>
+           </div>
+           <div class="leftSide">
+              <input type="radio" name="radio-buttons" value="male">None<br>
+              <input type="radio" name="radio-buttons" value="female">10 % or less<br>
+              <input type="radio" name="radio-buttons" value="More than 20%"> More than 20% <br>
+              <input type="radio" name="radio-buttons" value="I will invest only what i will tolerate to lose"> I will invest only what I will tolerate to lose<br>
+
+           </div>
+         </div>
+        
+       </div>
       </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
