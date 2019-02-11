@@ -1,0 +1,10 @@
+body{
+    background-color: beige
+}
+header{
+    text-align: center;
+}
+form{
+    background-color: azure;
+    border-radius: 0.5%;
+}
