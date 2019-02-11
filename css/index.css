@@ -14,6 +14,18 @@ form{
     display: flex;
 }
 .leftSide{
+    display: flex;
     margin: 10px;
     justify-content: flex-end;
+    width:45%;
+}
+.leftside label{
+    justify-content: flex-end;
+}
+.rightSide{
+    margin-top: 10px;
+    width: 45%;
+}
+.rightSide input{
+    width: 60%;
 }
