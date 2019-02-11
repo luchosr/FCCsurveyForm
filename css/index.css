@@ -7,4 +7,13 @@ header{
 form{
     background-color: azure;
     border-radius: 0.5%;
+    
+}
+.rowContainer{
+    margin: 20px;
+    display: flex;
+}
+.leftSide{
+    margin: 10px;
+    justify-content: flex-end;
 }
