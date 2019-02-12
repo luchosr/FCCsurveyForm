@@ -67,10 +67,13 @@ font-family: 'Open Sans', sans-serif; */
        </div>
        <div class="rowContainer">
          <div class="leftSide">
-            <label for="question">Since how many years have you heard about bitcoin, Blockchain and
+            <label for="question">Since how many years <br>
+               have you heard about bitcoin,<br>
+                Blockchain and
                 related?</label></div>
                 <div class="rightSide">
                     <select name="seniority" id="dropdown" class="dropdown">
+
                         <option disabled value>Select an option</option>
                         <option value="newie">I am a newie</option>
                         <option value="junior">A year ago</option>
@@ -80,37 +83,50 @@ font-family: 'Open Sans', sans-serif; */
                   </div>  
          </div>
          <div class="rowContainer">
-           <div class="rightSide">
-              <label for="question">In a hipotetical situation, how many of your savings will you
+           <div class="leftSide">
+              <label for="question">In a hipotetical situation,<br> how many of your savings <br> will you
                   invest in crypto?</label>
            </div>
-           <div class="leftSide">
-              <input type="radio" name="radio-buttons" value="male">None<br>
-              <input type="radio" name="radio-buttons" value="female">10 % or less<br>
-              <input type="radio" name="radio-buttons" value="More than 20%"> More than 20% <br>
-              <input type="radio" name="radio-buttons" value="I will invest only what i will tolerate to lose"> I will invest only what I will tolerate to lose<br>
+           <div class="rightSide">
+
+              <ul>
+                     <li style="list-style:none;"><input type="radio" name="radio-buttons" value="none">None<br>
+                     </li>
+                     <li style="list-style:none;"><input type="radio" name="radio-buttons" value="10orless">10 % or less<br></li>
+                     <li style="list-style:none;"><input type="radio" name="radio-buttons" value="More than 20%"> More than 20% <br></li>
+                     <li style="list-style:none;"><input type="radio" name="radio-buttons" value="I will invest only what i will tolerate to lose"> What I will tolerate to lose<br></li>   
+                </ul>
+              
+              
+              
 
            </div>
          </div>
          <div class="rowContainer">
-            <div class="rightSide">
+            <div class="leftSide">
                <label for="question">What kind of crypto assets do you prefer for investing? <br>
                  (you can choose all those you wish.)
                </label>
             </div>
-            <div class="leftSide">
-                <input type="checkbox" name="crypto1" value="Bitcoin"> Bitcoin<br>
-                <input type="checkbox" name="crypto2" value="AltC"> Altcoins<br>
-                <input type="checkbox" name="crypto3" value="ShC" checked> Shitcoins<br><br>
+            <div class="rightSide">
+              <ul>
+                  <li style="list-style:none;"><input type="checkbox" name="crypto1" value="Bitcoin"> Bitcoin<br><input type="checkbox" name="crypto2" value="AltC"> Altcoins<br></li>
+                  <li style="list-style:none;"><input type="checkbox" name="crypto3" value="ShC" checked> Shitcoins<br><br></li>
+        
+              </ul>
+                
+                
+                
+                
  
             </div>
           </div>
           <div class="rowContainer">
-              <div class="rightSide">
+              <div class="leftSide">
                  <label for="question">If you want to make us a sugestion please leave us a comment: 
                  </label>
               </div>
-              <div class="leftSide">
+              <div class="rightSide">
                   <textarea name="comments" id="" cols="30" rows="10" placeholder="Leave a comment here..." ></textarea>
    
               </div>

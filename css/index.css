@@ -9,6 +9,9 @@ form{
     border-radius: 0.5%;
     
 }
+ul{
+    padding: 0;
+}
 .rowContainer{
     margin: 20px;
     display: flex;
@@ -25,7 +28,10 @@ form{
 .rightSide{
     margin-top: 10px;
     width: 45%;
+   
+    
 }
-.rightSide input{
-    width: 60%;
+
+.rightSide ul{
+    justify-content: flex-start;
 }
